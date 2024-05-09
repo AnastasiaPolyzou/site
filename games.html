@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <style>
+    /* Στυλ για την games.html */
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Ασπρόμαυρο φόντο */
+    background-image: url("games.jpg"); /* Εικόνα ως φόντο */
+    background-size: cover; /* Καλύπτει ολόκληρη την περιοχή */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; /* Κεντράρει την εικόνα */
+    font-family: Arial, sans-serif; /* Ορισμός γραμματοσειράς */
+    color: black; /* Μαύρο χρώμα κειμένου */
+  }
+    footer {
+  font-size: 5px; /* Μικρότερο μέγεθος γραμματοσειράς */
+  padding: 5px; /* Μικρότερο padding */
+}
+  </style>
+  <style>
+   /* Στυλ για την κεφαλίδα */
+   header {
+     background-color: #1d8ebf;
+     color: black;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between; /* Τοποθέτηση των στοιχείων στο άκρο αριστερά και δεξιά */
+     align-items: center; /* Κέντραρισμα των στοιχείων κάθετα */
+   }
+
+   /* Στυλ για το φίλτρο */
+   .filter-box {
+     display: flex;
+     align-items: center;
+   }
+
+   .filter-box input[type="text"] {
+     padding: 5px;
+     margin-right: 10px;
+   }
+
+   /* Στυλ για το πεδίο αναζήτησης */
+   .search-box input[type="text"] {
+     padding: 5px;
+     width: 150px;
+     margin-right: 10px;
+   }
+
+   /* Στυλ για την επιλογή γλώσσας */
+   .language-select select {
+     padding: 5px;
+   }
+ </style>
+  
+</head>
+<body>
+ <header>
+   <h1>Games</h1>
+   <!-- Προσθήκη φίλτρου -->
+   <div class="filter-box">
+     <input type="text" placeholder="Φίλτρο">
+    
+   </div>
+   <!-- Προσθήκη πεδίου αναζήτησης -->
+   <div class="search-box">
+     <input type="text" placeholder="Αναζήτηση">
+   </div>
+   <!-- Προσθήκη επιλογής γλώσσας -->
+   <div class="language-select">
+     <select>
+       <option value="gr">Ελληνικά</option>
+       <option value="en">English</option>
+     </select>
+   </div>
+ </header>
+ <nav>
+   <ul>
+     <li><a href="index.html">Αρχική</a></li>
+     <li><a href="games.html?category=ps5">PS5</a></li>
+     <li><a href="games.html?category=pc">PC</a></li>
+     <li><a href="games.html?category=xbox">Xbox</a></li>
+   </ul>
+ </nav>
+ <main>
+  <section id="ps5" class="category">
+    <h2>Παιχνίδια για το PlayStation 5</h2>
+    <ul>
+      <li>
+        <img src="fifa.jpg" alt="FIFA 2024">
+        <p>FIFA 2024</p>
+      </li>
+      <li>
+        <img src="nba2k.jpg" alt="NBA 2K 2024">
+        <p>NBA 2K 2024</p>
+      </li>
+      <li>
+        <img src="godofwar.jpg" alt="God of War">
+        <p>God of War</p>
+      </li>
+    </ul>
+  </section>
+  <section id="pc" class="category">
+    <h2>Παιχνίδια για PC Gaming</h2>
+    <ul>
+      <li>
+        <img src="callofduty.jpg" alt="Call of Duty: Warzone">
+        <p>Call of Duty: Warzone</p>
+      </li>
+      <li>
+        <img src="counterstrike.jpg" alt="Counter-Strike 2">
+        <p>Counter-Strike 2</p>
+      </li>
+      <li>
+        <img src="gtav.jpg" alt="Grand Theft Auto V">
+        <p>Grand Theft Auto V</p>
+      </li>
+    </ul>
+  </section>
+  <section id="xbox" class="category">
+    <h2>Παιχνίδια για το Xbox</h2>
+    <ul>
+      <li>
+        <img src="grandtourism.jpg" alt="Grand Tourism">
+        <p>Grand Tourism</p>
+      </li>
+      <li>
+        <img src="needforspeed.jpg" alt="Need for Speed">
+        <p>Need for Speed</p>
+      </li>
+      <li>
+        <img src="uncharted.jpg" alt="Uncharted">
+        <p>Uncharted</p>
+      </li>
+    </ul>
+  </section>
+  
+  <div class="info-box">
+    <h3>Δημοφιλή Παιχνίδια</h3>
+    <ul>
+      <li>FIFA 2024: Διαθέσιμο για PS5, Xbox και PC, το FIFA 2024 συνεχίζει να είναι ένα από τα πιο δημοφιλή παιχνίδια ποδοσφαίρου κάθε χρόνο.</li>
+      <li>Call of Duty: Warzone: Με συνεχείς ενημερώσεις και νέο περιεχόμενο, το Call of Duty: Warzone παραμένει ένα από τα πιο hot παιχνίδια για PC, PS5 και Xbox.</li>
+      <li>Horizon Forbidden West: Αποκλειστικό για το PS5, το Horizon Forbidden West αναμένεται να είναι ένα από τα κορυφαία παιχνίδια δράσης και εξερεύνησης του 2024.</li>
+      <li>Halo Infinite: Αναμένεται να κυκλοφορήσει για το Xbox και το PC, το Halo Infinite είναι ένα από τα πιο αναμενόμενα παιχνίδια FPS του έτους.</li>
+      <li>Cyberpunk 2077: Παρόλο που κυκλοφόρησε πριν από μερικά χρόνια, το Cyberpunk 2077 συνεχίζει να είναι ένα από τα πιο δημοφιλή παιχνίδια RPG για PC, PS5 και Xbox.</li>
+      <li>NBA 2K 2024: Η σειρά NBA 2K συνεχίζει να είναι δημοφιλής και το NBA 2K 2024 αναμένεται να είναι ένα από τα καλύτερα παιχνίδια μπάσκετ της χρονιάς.</li>
+    </ul>
+  </div>
+
+  <div class="additional-info">
+    <p>Για περισσότερες πληροφορίες, επισκεφτείτε το σχετικό άρθρο <a href=https://unboxholics.com/news/gaming/113746-ta-10-koryfaia-paichnidia-tou-2024-mechri-stigmis target="_blank">εδώ</a>.</p>
+  </div>
+  
+</main>
+<footer>
+  <p><footer>
+   
+  <p>Στην συγκεκριμένη ιστοσελίδα παρουσιάζονται προτάσεις για τα πιο hot παιχνίδια ανάλογα με την κονσόλα που έχετε.</p>
+    <p>Για οποιαδήποτε ερώτηση μπορείτε να μας βρείτε στο email: <a href="mailto:anastasiapoluzou@gmail.com">anastasiapoluzou@gmail.com</a> ή στο τηλέφωνο: <a href="tel:+306973476559">+306973476559</a>.</p>
+    <p>Πνευματικά δικαιώματα &copy; 2024 Ιστοσελίδα Παιχνιδιών</p>
+  </footer>
+  </p></footer>
+</footer>
+</body>
+</html>

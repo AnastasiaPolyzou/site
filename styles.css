@@ -1,0 +1,169 @@
+
+
+
+/* Στυλ για την κεφαλίδα */
+header {
+  background-color: #1d8ebf;
+  color: black; /* Μαύρο χρώμα κειμένου */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Στυλ για την πλοήγηση */
+nav {
+  background-color: #dddddd;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0); /* Μαύρο χρώμα κειμένου */
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #cccccc;
+}
+
+m.category {
+  flex: 1;
+  
+  margin-bottom: 20px;
+}
+
+.category h2 {
+  flex: 1;
+  
+  margin-bottom: 10px;
+  color: black; /* Μαύρο χρώμα κειμένου */
+}
+
+/* Στυλ για τις εικόνες των κατηγοριών */
+.category img {
+  width: 100px; /* Ιδανικά ίδιο μήκος για όλες τις εικόνες */
+  height: auto;
+  background-color: lightblue; /* Φόντο γαλάζιο */
+}
+footer {
+  position: fixed; /* Σταθερή θέση */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d8ebf;
+  color: black; /* Μαύρο χρώμα κειμένου */
+  text-align: center;
+  padding: 20px;
+  font-size: 18px; /* Μεγαλύτερη γραμματοσειρά */
+}
+/* Στυλ για τις κατηγορίες */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.category:nth-child(3) {
+  flex-basis: 100%;
+}
+
+.category h2 {
+  margin-bottom: 10px;
+  color: black; /* Μαύρο χρώμα κειμένου */
+}
+
+/* Στυλ για τις εικόνες των κατηγοριών */
+.category img {
+  width: auto;
+  height: 150px; /* Σταθερό ύψος εικόνας */
+  object-fit: cover; /* Περικοπή της εικόνας για να εφαρμοστεί το ίδιο ύψος */
+  background-color: lightblue; /* Φόντο γαλάζιο */
+}
+
+.category p {
+  font-weight: bold; /* Εφαρμογή bold στο κείμενο */
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.category:nth-child(3) {
+  flex-basis: 100%;
+}
+
+.category h2 {
+  margin-bottom: 10px;
+  color: black; /* Μαύρο χρώμα κειμένου */
+}
+
+/* Στυλ για τις εικόνες των κατηγοριών */
+.category img {
+  width: auto;
+  height: 150px; /* Σταθερό ύψος εικόνας */
+  object-fit: cover; /* Περικοπή της εικόνας για να εφαρμοστεί το ίδιο ύψος */
+  background-color: lightblue; /* Φόντο γαλάζιο */
+}
+
+.category p {
+  font-weight: bold; /* Εφαρμογή bold στο κείμενο */
+}
+
+
+/* Στυλ για το info-box και το additional-info */
+.info-box {
+  position: absolute;
+  top: 150%; /* Μετακίνηση προς τα κάτω κατά 70% του ύψους της σελίδας */
+  right: 0%; /* Μετακίνηση προς τα δεξιά κατά 5% του πλάτους της σελίδας */
+  transform: translate(0, -50%); /* Κατακόρυφη μετατόπιση κατά το ήμισυ του ύψους προς τα πάνω */
+  font-size: 16px;
+  
+}
+
+
+.additional-info {
+  position: absolute;
+  top: 180%; /* Μετακίνηση προς τα κάτω κατά 70% του ύψους της σελίδας */
+  right: 9%; /* Μετακίνηση προς τα δεξιά κατά 5% του πλάτους της σελίδας */
+  transform: translate(0, -50%); /* Κατακόρυφη μετατόπιση κατά το ήμισυ του ύψους προς τα πάνω */
+  font-size: 20px;
+  
+}
+
+
+.info-box h3,
+.additional-info h3 {
+  margin-bottom: 10px; /* Απόσταση μεταξύ του τίτλου και των περιεχομένων */
+}
+
+/* Στυλ για τα περιεχόμενα του info-box και additional-info */
+.info-box p,
+.additional-info p {
+  margin-bottom: 5px; /* Απόσταση μεταξύ των παραγράφων */
+}
+
+/* Στυλ για τους συνδέσμους μέσα στο additional-info */
+.additional-info a {
+  color: #18b1d7; /* Χρώμα συνδέσμων */
+}

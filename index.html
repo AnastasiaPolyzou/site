@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Αρχική Σελίδα</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Ασπρόμαυρο φόντο */
+    background-image: url("background_image.jpg"); /* Εικόνα ως φόντο */
+    background-size: cover; /* Καλύπτει ολόκληρη την περιοχή */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; /* Κεντράρει την εικόνα */
+    font-family: Arial, sans-serif; /* Ορισμός γραμματοσειράς */
+    color: black; /* Μαύρο χρώμα κειμένου */
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the World of Games!</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Αρχική</a></li>
+      <li><a href="games.html?category=ps5">PS5</a></li>
+      <li><a href="games.html?category=pc">PC</a></li>
+      <li><a href="games.html?category=xbox">Xbox</a></li>
+    </ul>
+  </nav>
+  <div class="user-actions" style="float: right;">
+    <button onclick="location.href='register.html';">Εγγραφή</button>
+    <button onclick="location.href='login.html';">Σύνδεση</button>
+  </div>
+  <form style="float: right; clear: both;">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="password">Κωδικός πρόσβασης:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <input type="submit" value="Εγγραφή">
+  </form>
+  <main>
+    <section>
+      <h2>Επιλέξτε Κατηγορία</h2>
+      <div class="categories">
+        <a href="games.html?category=ps5">
+          <img src="ps5.jpg" alt="PlayStation 5" width="200" height="150">
+        </a>
+        <a href="games.html?category=pc">
+          <img src="pc.jpg" alt="PC Gaming" width="200" height="150">
+        </a>
+        <a href="games.html?category=xbox">
+          <img src="xbox.jpg" alt="Xbox Series X" width="200" height="150">
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><footer>
+      <p>Στην συγκεκριμένη ιστοσελίδα παρουσιάζονται προτάσεις για τα πιο hot παιχνίδια ανάλογα με την κονσόλα που έχετε.</p>
+      <p>Για οποιαδήποτε ερώτηση μπορείτε να μας βρείτε στο email: <a href="mailto:anastasiapoluzou@gmail.com">anastasiapoluzou@gmail.com</a> ή στο τηλέφωνο: <a href="tel:+306973476559">+306973476559</a>.</p>
+      <p>Πνευματικά δικαιώματα &copy; 2024 Ιστοσελίδα Παιχνιδιών</p>
+    </footer>
+    /p>
+  </footer>
+</body>
+</html>
